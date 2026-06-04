@@ -2,42 +2,68 @@
 <html>
     <head>
         <style>
-            header, span, footer {
-                background-color: rgb(215, 227, 240);
-                margin: 0.4%;
+             * {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+    
+            body {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
                 padding: 8px;
+            }
+    
+            header, nav, footer {
+                background-color: #e5e7e9;
+                padding: 28px;
                 text-align: center;
+                width: 100%;
             }
-            span {
-               display: inline-block;
+
+            section {
+                display: flex;
+                gap: 8px;
+                width: 100%;
             }
-            .content {
+            
+            aside, main{
+                background-color: #e5e7e9;
                 width: 20%;
+                min-height: 600px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
             }
-            .main-content {
-                width: 54%;
+    
+            main {
+                flex: 1;
             }
         </style>
     </head>
 <body>
     <header>
-        <h2>Header</h2>
+        Header
     </header>
-    <header>
-        <h2>Navigation Menu</h2>
-    </header>
-    <span class = "content">
-        Content
-    </span>
-    <span class = 'main-content'>
-        Main Content
-    </span>
-    <span class = "content">
-        Content
-    </span>
-    <br>
+    <nav>
+        Navigation Menu
+    </nav>
+
+    <section>
+        <aside>
+            Content
+        </aside>
+        <main>
+            Main Content
+        </main>
+        <aside>
+            Content
+        </aside>
+    </section>
+    
     <footer>
-        <h2>Footer</h2>
+        Footer
     </footer>
 </body>
 </html>
