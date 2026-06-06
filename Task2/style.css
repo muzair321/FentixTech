@@ -1,0 +1,37 @@
+.first, .second, .third {
+    display: flex;
+  align-items: center;
+  padding-top: 2rem;
+}
+.first h2, .first p{
+    font-size: 2.3vw;
+    text-align: center;
+}
+.second_text h2, .third_text h2, .second_text p, .third_text p{
+    font-size: 2.8vw;
+    text-align: center;
+}
+.image1 img, .image2 img, .image3 img{
+    width: 50vw;
+    height: 50vw;
+    object-fit: contain;
+}
+.links{
+    padding-left: 5vw;
+}
+.links img{
+    padding-left: 2vw;
+    width: 40%;
+    height: 40%;
+    object-fit: contain;
+}
+
+.moto, .second_text, .third_text{
+    padding-left: .5vw;
+    width: 50vw;
+}
+.logo{
+    padding-left: 10vw;
+    width: 60%;
+    height: 60%;
+}
