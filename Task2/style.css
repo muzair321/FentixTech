@@ -1,37 +1,80 @@
-.first, .second, .third {
+@media (min-width: 1270px) {
+    html {
+        scroll-snap-type: y mandatory;
+        overflow-y: scroll;
+        height: 100%;
+        scroll-behavior: smooth;
+    }
+
+    .first, .second, .third, .fourth, footer {
+        scroll-snap-align: start;
+        min-height: 100vh;
+    }
+}
+
+.first, .second, .third, .fourth, footer{
     display: flex;
   align-items: center;
-  padding-top: 2rem;
+  padding-top: 1rem;
+}
+
+h2, p{
+    font-size: 2.8vw;
+    text-align: center;
 }
 .first h2, .first p{
     font-size: 2.3vw;
     text-align: center;
 }
-.second_text h2, .third_text h2, .second_text p, .third_text p{
-    font-size: 2.8vw;
-    text-align: center;
-}
-.image1 img, .image2 img, .image3 img{
+.image1 img, .image2 img, .image3 img, .image4 img{
     width: 50vw;
     height: 50vw;
     object-fit: contain;
 }
+
 .links{
     padding-left: 5vw;
 }
-.links img{
+.links-2{
+    width: 45vw;
+}
+
+.links img, .links-2 img{
     padding-left: 2vw;
     width: 40%;
     height: 40%;
     object-fit: contain;
 }
+.links img{
+    padding-left: 0.5vw;
+}
 
-.moto, .second_text, .third_text{
+.moto, .second_text, .third_text, .fourth_text{
     padding-left: .5vw;
-    width: 50vw;
+    width: 45vw;
 }
 .logo{
     padding-left: 10vw;
     width: 60%;
     height: 60%;
+}
+footer{
+    flex-direction: column;
+    padding-top: 1rem;
+}
+.download_text{
+    font-size: 2.5vw;
+}
+.contact_text{
+    font-size: 2vw;
+}
+.peratude{
+    width: 10vw;
+    height: 10vw;
+    object-fit: contain;
+}
+
+a img:hover{
+    transform: translateY(-3px) scale(1.04);
+    opacity: 0.85;
 }
