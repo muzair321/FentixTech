@@ -12,6 +12,9 @@
     }
 }
 
+body{
+    font-family: 'Roboto', sans-serif;
+}
 .first, .second, .third, .fourth, footer{
     display: flex;
   align-items: center;
@@ -77,4 +80,8 @@ footer{
 a img:hover{
     transform: translateY(-3px) scale(1.04);
     opacity: 0.85;
+}
+
+.first p, .second p, .third p, .fourth p{
+    opacity: 0.5;
 }
