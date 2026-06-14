@@ -1,20 +1,305 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Task 3</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Catalog-Z</title>
+    <link rel="stylesheet" href="resources/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
-<body>
-    <header>
-        <a href="#"><h3>Catalog-Z</h3></a>
-    </header>
-    <nav>
-        
-    </nav>
-    <main>
 
+<body>
+
+    <nav class="navbar">
+        <a href="#" class="nav-brand">
+            <i class="fas fa-film"></i>
+            <span>Catalog-Z</span>
+        </a>
+        <ul class="nav-links">
+            <li><a href="#" class="active">Photos</a></li>
+            <li><a href="#">Videos</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+
+        <div class="dropdown">
+            <span class="menu-btn" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </span>
+            <ul class="dropdown-menu" id="dropdownMenu">
+                <li><a href="#" class="active">Photos</a></li>
+                <li><a href="#">Videos</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <img src="resources/hero.jpg" alt="Hero" class="hero-img">
+        <div class="hero-search">
+            <input type="text" placeholder="Search">
+            <button><i class="fas fa-search"></i></button>
+        </div>
+    </section>
+
+    <main class="container">
+
+        <!-- Latest Photos -->
+        <section class="section">
+            <div class="section-header">
+                <h2>Latest Photos</h2>
+                <div class="pagination-inline">
+                    <span>Page</span>
+                    <input type="number" value="1" min="1">
+                    <span>of 200</span>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="card">
+                    <div class="img-btn">
+                        <img src="resources/img1.jpg" alt="Photo 1">
+                        <div class="overlay">
+                            <p>CLOCKS</p>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <span>18 Oct 2020</span>
+                        <span>9,906 views</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img-btn">
+                        <img src="resources/img2.jpg" alt="Photo 2">
+                        <div class="overlay">
+                            <p>PLANTS</p>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <span>14 Oct 2020</span>
+                        <span>16,100 views</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img-btn">
+                        <img src="resources/img3.jpg" alt="Photo 3">
+                        <div class="overlay">
+                            <p>MORNING</p>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <span>12 Oct 2020</span>
+                        <span>12,460 views</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img-btn">
+                        <img src="resources/img4.jpg" alt="Photo 4">
+                        <div class="overlay">
+                            <p>PINKY</p>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <span>10 Oct 2020</span>
+                        <span>11,402 views</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img-btn">
+                        <img src="resources/img5.jpg" alt="Photo 5">
+                        <div class="overlay">
+                            <p>HANGERS</p>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <span>08 Oct 2020</span>
+                        <span>8,210 views</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img-btn">
+                        <img src="resources/img6.jpg" alt="Photo 6">
+                        <div class="overlay">
+                            <p>PERFUMES</p>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <span>05 Oct 2020</span>
+                        <span>14,330 views</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img-btn">
+                        <img src="resources/img7.jpg" alt="Photo 7">
+                        <div class="overlay">
+                            <p>BUS</p>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <span>02 Oct 2020</span>
+                        <span>7,890 views</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img-btn">
+                        <img src="resources/img8.jpg" alt="Photo 8">
+                        <div class="overlay">
+                            <p>NEW YORK</p>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <span>30 Sep 2020</span>
+                        <span>10,540 views</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img-btn">
+                        <img src="resources/img9.jpg" alt="Photo 9">
+                        <div class="overlay">
+                            <p>ABSTRACT</p>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <span>10 Sep 2020</span>
+                        <span>42,700 views</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img-btn">
+                        <img src="resources/img10.jpg" alt="Photo 10">
+                        <div class="overlay">
+                            <p>FLOWERS</p>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <span>8 Sep 2020</span>
+                        <span>11,402 views</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img-btn">
+                        <img src="resources/img11.jpg" alt="Photo 11">
+                        <div class="overlay">
+                            <p>ROSY</p>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <span>4 Sep 2020</span>
+                        <span>32,906 views</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img-btn">
+                        <img src="resources/img12.jpg" alt="Photo 12">
+                        <div class="overlay">
+                            <p>ROCKY</p>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <span>28 Aug 2020</span>
+                        <span>50,700 views</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img-btn">
+                        <img src="resources/img13.jpg" alt="Photo 13">
+                        <div class="overlay">
+                            <p>PURPLE</p>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <span>22 Aug 2020</span>
+                        <span>107,510 views</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img-btn">
+                        <img src="resources/img14.jpg" alt="Photo 14">
+                        <div class="overlay">
+                            <p>SEA</p>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <span>14 Aug 2020</span>
+                        <span>118,006 views</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img-btn">
+                        <img src="resources/img15.jpg" alt="Photo 15">
+                        <div class="overlay">
+                            <p>TURTLE</p>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <span>9 Aug 2020</span>
+                        <span>121,343 views</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img-btn">
+                        <img src="resources/img16.jpg" alt="Photo 16">
+                        <div class="overlay">
+                            <p>PEACE</p>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <span>3 Aug 2020</span>
+                        <span>21,400 views</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="pagination">
+            <button class="btn-prev">Previous</button>
+            <div class="page-numbers">
+                <button class="page active">1</button>
+                <button class="page">2</button>
+                <button class="page">3</button>
+                <button class="page">4</button>
+            </div>
+            <button class="btn-next">Next Page</button>
+        </div>
     </main>
+ 
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>About Catalog-Z</h3>
+                <p>Catalog-Z is free <a href="#">Bootstrap 5</a> Alpha 2 HTML Template for video and photo websites. You
+                    can freely use this TemplateMo layout for a front-end integration with any kind of CMS website.</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-left">
+                    <h3>Our Links</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                    <ul>
+                        <li><a href="#">Advertise</a></li>
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">Our Company</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-right">
+                    <a href="#">Terms of Use</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>Copyright 2020 Catalog-Z Company. All rights reserved.</span>
+                <span>Designed by <a href="#">TemplateMo</a></span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="resources/script.js"></script>
 </body>
+
 </html>
