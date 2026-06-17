@@ -59,44 +59,6 @@ main {
 
 
 
-
-.btn {
-    flex: 1;
-    margin: 0.2rem;
-    padding: 0.4rem;
-    border-radius: 0.3rem;
-    border: 1px solid #ccc;
-    background-color: #dadada;
-    cursor: pointer;
-    transition: 0.1s;
-
-    &:hover {
-        background-color: #c0c0c0;
-        transform: scale(1.05);
-    }
-}
-
-.btn-icon {
-    width: 3rem;
-    margin: 0.2rem;
-    padding: 0.2rem;
-    border-radius: 0.3rem;
-    border: 1px solid #ccc;
-    background-color: #dadada;
-    cursor: pointer;
-    transition: 0.1s;
-
-    &:hover {
-        background-color: #c0c0c0;
-        transform: scale(1.05);
-    }
-}
-
-.btn-icon-img {
-    width: 2rem;
-    height: 2rem;
-}
-
 .stories {
     display: flex;
     padding: 0.4rem;
@@ -197,6 +159,7 @@ main {
     flex-direction: column;
     width: 100%;
     height: auto;
+    border-bottom: 1px solid #ccc;
 }
 
 .top-card {
@@ -354,10 +317,6 @@ nav {
 }
 
 @media (max-width: 600px) {
-    .avatar-icon {
-        width: 7rem;
-        height: 7rem;
-    }
 
     .posts {
         grid-template-columns: repeat(3, 1fr);
