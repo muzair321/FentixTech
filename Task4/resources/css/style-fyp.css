@@ -65,6 +65,29 @@ main {
     flex: 1;
 }
 
+.tags{
+    display: flex;
+    overflow-x: auto;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    border-bottom: 1px solid #000000;
+    
+}
+
+.tag {
+    background-color: #f0f0f0;
+    padding: 0.3rem 0.6rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: 0.1s;
+
+    &:hover {
+        background-color: #e0e0e0;
+        transform: scale(1.05);
+    }
+}
+
 .content {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
