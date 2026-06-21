@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Winter Gallery - Task 5</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Montserrat:wght@300;400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="#home" class="logo"><span class="logo-icon">&#10052;</span>WINTER</a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#home" class="active"><span class="logo-icon-a">&#10052;</span>Home</a>
+        <a href="#gallery"><span class="logo-icon-a">&#10052;</span>Gallery</a>
+        <a href="#about"><span class="logo-icon-a">&#10052;</span>About</a>
+        <a href="#contact"><span class="logo-icon-a">&#10052;</span>Contact</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h1>Winter Moments</h1>
+      <p>A Collection of Frozen Beauty</p>
+    </div>
+  </section>
+
+  <section class="gallery-section" id="gallery">
+    <div class="filter-tabs">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="landscapes">Landscapes</button>
+      <button class="filter-btn" data-filter="decorations">Decorations</button>
+      <button class="filter-btn" data-filter="food">Food</button>
+      <button class="filter-btn" data-filter="family">Family</button>
+    </div>
+
+    <div class="gallery-grid" id="galleryGrid">
+      <div class="gallery-item tall" data-category="landscapes">
+        <img src="images/mountain2.jpg" alt="Snow-capped mountain peak">
+        <div class="overlay">
+          <h3>Mountain Snow</h3>
+          <p>Landscapes</p>
+        </div>
+      </div>
+      <div class="gallery-item" data-category="decorations">
+        <img src="images/ornament.jpg" alt="Winter pine and berries">
+        <div class="overlay">
+          <h3>Ornament Detail</h3>
+          <p>Decorations</p>
+        </div>
+      </div>
+      <div class="gallery-item" data-category="food">
+        <img src="images/coffee.jpg" alt="Hot chocolate being poured">
+        <div class="overlay">
+          <h3>Winter Warmth</h3>
+          <p>Food</p>
+        </div>
+      </div>
+      <div class="gallery-item" data-category="landscapes">
+        <img src="images/mountain.jpg" alt="Foggy snow-covered forest">
+        <div class="overlay">
+          <h3>Frozen Lake</h3>
+          <p>Landscapes</p>
+        </div>
+      </div>
+      <div class="gallery-item" data-category="family">
+        <img src="images/friends.jpg" alt="Friends walking together">
+        <div class="overlay">
+          <h3>Family Joy</h3>
+          <p>Family</p>
+        </div>
+      </div>
+      <div class="gallery-item" data-category="decorations">
+        <img src="images/christmas.jpg" alt="Holiday fabric detail">
+        <div class="overlay">
+          <h3>Holiday Lights</h3>
+          <p>Decorations</p>
+        </div>
+      </div>
+      <div class="gallery-item" data-category="food">
+        <img src="images/donuts.jpg" alt="Winter color swatch">
+        <div class="overlay">
+          <h3>Festive Treats</h3>
+          <p>Food</p>
+        </div>
+      </div>
+      <div class="gallery-item tall" data-category="landscapes">
+        <img src="images/forest.jpg" alt="Family winter moment">
+        <div class="overlay">
+          <h3>Winter Forest</h3>
+          <p>Landscapes</p>
+        </div>
+      </div>
+      <div class="gallery-item" data-category="family">
+        <img src="images/children.jpg" alt="Winter color swatch">
+        <div class="overlay">
+          <h3>Winter Together</h3>
+          <p>Family</p>
+        </div>
+      </div>
+      <div class="gallery-item" data-category="decorations">
+        <img src="images/present.jpg" alt="Family winter moment">
+        <div class="overlay">
+          <h3>Gift Wrapping</h3>
+          <p>Decorations</p>
+        </div>
+      </div>
+      <div class="gallery-item" data-category="landscapes">
+        <img src="images/road.jpg" alt="Holiday cookies on a plate">
+        <div class="overlay">
+          <h3>Snowy Path</h3>
+          <p>Landscapes</p>
+        </div>
+      </div>
+      <div class="gallery-item" data-category="food">
+        <img src="images/desert.jpg" alt="Hot chocolate with marshmallows">
+        <div class="overlay">
+          <h3>Cozy Drinks</h3>
+          <p>Food</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="about-page-section" id="about">
+    <div class="page-header">
+      <h2>About</h2>
+    </div>
+    <div class="about-section">
+      <div class="about-text">
+        <p>Capturing the serene beauty of winter landscapes has been my passion for over a decade. Each photograph tells
+          a story of frozen moments, quiet snowfalls, and the peaceful stillness that blankets the world during the
+          coldest months.</p>
+        <p>From the majestic mountain peaks covered in pristine snow to intimate family moments wrapped in winter
+          warmth, my work celebrates the unique beauty that this season brings. Through my lens, I aim to preserve the
+          fleeting magic of winter — the way light dances on ice crystals, the cozy comfort of holiday gatherings, and
+          the breathtaking landscapes transformed by snow.</p>
+        <p>My photography has been featured in various publications and exhibitions, and I continue to explore new ways
+          to capture the essence of winter's wonder.</p>
+      </div>
+      <div>
+        <img src="images/about-photo.jpg" alt="Photographer's workspace">
+        <div class="about-stats">
+          <div class="stat-card">
+            <div class="stat-number">10+</div>
+            <div class="stat-label">Years Experience</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">500+</div>
+            <div class="stat-label">Photos Captured</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-page-section" id="contact">
+    <div class="page-header">
+      <h2>Get In Touch</h2>
+    </div>
+    <div class="moto">
+      <p>Let's work together to capture your winter moments</p>
+    </div>
+    <div class="contact-section">
+      <form id="contactForm">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" required></textarea>
+        </div>
+        <button type="submit" class="submit-btn">Send Message</button>
+      </form>
+    </div>
+    <div class="contact-info">
+      <p><a href="mailto:muzairasim@gmail.com">📧 muzairasim@gmail.com</a></p>
+      <p><a href="tel:+1234567890">📱 +1 (555) 123-4567</a></p>
+      <p>📍 Colorado, USA</p>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Winter Gallery. All rights reserved.</p>
+  </footer>
+
+  <lightbox id="image-view">
+    <img src="" alt="Expanded view">
+    <button class="close-btn" aria-label="Close">&times;</button>
+  </lightbox>
+  <script src="js/script.js"></script>
+  
+</body>
+
+</html>
